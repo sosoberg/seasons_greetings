@@ -1,0 +1,524 @@
+[
+    {
+        "name": "Apples",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Apricots",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "WA"
+    },
+    {
+        "name": "Artichokes",
+        "start_season": "9",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Arugula",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Asparagus",
+        "start_season": "4",
+        "end_season": "6",
+        "state": "WA"
+    },
+    {
+        "name": "Basil",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Beets",
+        "start_season": "6",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Blackberries",
+        "start_season": "7",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Blueberries",
+        "start_season": "6",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Boysenberries",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "WA"
+    },
+    {
+        "name": "Broccoli",
+        "start_season": "6",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Brussels Sprouts",
+        "start_season": "9",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Cabbage",
+        "start_season": "6",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Cantaloupes",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Carrots",
+        "start_season": "6",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Cauliflower",
+        "start_season": "7",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Celeriac",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Celery",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Chard",
+        "start_season": "5",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Cherries",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "WA"
+    },
+    {
+        "name": "Chiles",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Collard Greens",
+        "start_season": "5",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Corn",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Cucumber",
+        "start_season": "7",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Edible Flowers",
+        "start_season": "4",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Eggplant",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Fava Beans",
+        "start_season": "4",
+        "end_season": "6",
+        "state": "WA"
+    },
+    {
+        "name": "Fennel",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Fiddleheads",
+        "start_season": "4",
+        "end_season": "5",
+        "state": "WA"
+    },
+    {
+        "name": "Figs",
+        "start_season": "7",
+        "end_season": "8",
+        "state": "WA"
+    },
+    {
+        "name": "Garlic",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Grapes",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Green Beans",
+        "start_season": "7",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Scallions",
+        "start_season": "3",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Greens",
+        "start_season": "5",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Huckleberries",
+        "start_season": "8",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Kale",
+        "start_season": "5",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Kiwi",
+        "start_season": "9",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Kohlrabi",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Leeks",
+        "start_season": "9",
+        "end_season": "3",
+        "state": "WA"
+    },
+    {
+        "name": "Lettuce",
+        "start_season": "5",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Marionberries",
+        "start_season": "7",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Melons",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Mint",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Morels",
+        "start_season": "5",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Mushrooms",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Nectarines",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "WA"
+    },
+    {
+        "name": "Nettles",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "WA"
+    },
+    {
+        "name": "Potatoes",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "WA"
+    },
+    {
+        "name": "Onions",
+        "start_season": "6",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Oregano",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Parsley",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Parsnips",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Pears",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Pea Greens",
+        "start_season": "5",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Peas",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "WA"
+    },
+    {
+        "name": "Peppers",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Persimmons",
+        "start_season": "9",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Plums and Pluots",
+        "start_season": "8",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Potatoes",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Pumpkins",
+        "start_season": "10",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Quinces",
+        "start_season": "10",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Radicchio",
+        "start_season": "5",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Radishes",
+        "start_season": "5",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Radishes ",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Raspberries",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "WA"
+    },
+    {
+        "name": "Rhubarb",
+        "start_season": "4",
+        "end_season": "6",
+        "state": "WA"
+    },
+    {
+        "name": "Rosemary",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Rutabaga",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Sage",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Salsify",
+        "start_season": "9",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Shallots",
+        "start_season": "9",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Shelling Beans",
+        "start_season": "9",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Snap peas",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "WA"
+    },
+    {
+        "name": "Sorrel",
+        "start_season": "5",
+        "end_season": "11",
+        "state": "WA"
+    },
+    {
+        "name": "Spinach",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Squash",
+        "start_season": "6",
+        "end_season": "2",
+        "state": "WA"
+    },
+    {
+        "name": "Stinging Nettles",
+        "start_season": "4",
+        "end_season": "5",
+        "state": "WA"
+    },
+    {
+        "name": "Strawberries",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "WA"
+    },
+    {
+        "name": "Sunchokes",
+        "start_season": "7",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Thyme",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Tomatoes",
+        "start_season": "7",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Turnips",
+        "start_season": "6",
+        "end_season": "1",
+        "state": "WA"
+    },
+    {
+        "name": "Watercress",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "WA"
+    },
+    {
+        "name": "Watermelon",
+        "start_season": "8",
+        "end_season": "9",
+        "state": "WA"
+    },
+    {
+        "name": "Zucchini",
+        "start_season": "6",
+        "end_season": "10",
+        "state": "WA"
+    },
+    {
+        "name": "Zucchini Blossoms",
+        "start_season": "6",
+        "end_season": "10",
+        "state": "WA"
+    }
+]
