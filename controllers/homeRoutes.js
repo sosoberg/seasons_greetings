@@ -44,7 +44,7 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 });
 
-router.get('/community', async (req, res) => {
+router.get('/community', withAuth, async (req, res) => {
   const userData = await User.findAll({
     attributes: { exclude: ['password'] },
     order: [['name', 'ASC']],
