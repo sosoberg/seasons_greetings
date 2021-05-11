@@ -32,7 +32,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/profile', async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
       order: [['name', 'ASC']],
@@ -42,6 +42,18 @@ router.get('/profile', async (req, res) => {
       users,
       logged_in: req.session.logged_in,
     });
+});
+
+router.get('/community', async (req, res) => {
+  const userData = await User.findAll({
+    attributes: { exclude: ['password'] },
+    order: [['name', 'ASC']],
+  });
+  const users = userData.map((project) => project.get({ plain: true }));
+  res.render('community', {
+    users,
+    logged_in: req.session.logged_in,
+  });
 });
 
 module.exports = router;
