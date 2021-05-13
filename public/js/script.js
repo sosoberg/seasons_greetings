@@ -15,6 +15,10 @@ document.getElementById('home').addEventListener('click', function() {
     document.location.replace('/');
 });
 
+document.getElementById('profile').addEventListener('click', function() {
+    document.location.replace('/profile');
+});
+
 const newFormHandler = async () => {
     const state_name = document.querySelector('#select_state').value;
     const start_month = document.querySelector('#select_mon').value;
