@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
+const { Product } = require('../models');
 
 // Prevent non logged in users from viewing the homepage
 router.get('/', async (req, res) => {
@@ -10,10 +11,17 @@ router.get('/', async (req, res) => {
       order: [['name', 'ASC']],
     });
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const users = userData.map((user) => user.get({ plain: true }));
+
+    const productData = await Product.findAll({
+      order: [['name', 'ASC']],
+    });
+
+    const products = productData.map((product) => product.get({ plain: true }));
 
     res.render('homepage', {
       users,
+      products,
       // Pass the logged in flag to the template
       logged_in: req.session.logged_in,
     });
