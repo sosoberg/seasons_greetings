@@ -52,6 +52,7 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 });
 
+// renders the community page to authorized clients and sends user data
 router.get('/community', withAuth, async (req, res) => {
   const userData = await User.findAll({
     attributes: { exclude: ['password'] },
@@ -61,6 +62,9 @@ router.get('/community', withAuth, async (req, res) => {
   res.render('community', {
     users,
     logged_in: req.session.logged_in,
+    user_id: req.session.user_id,
+    userName : req.session.username
+
   });
 });
 
