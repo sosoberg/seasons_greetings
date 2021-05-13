@@ -37,8 +37,10 @@ const newFormHandler = async () => {
         return response.json();
     }).then(function (data) {
         for (let i = 0; i < data.length; i++) {
-            if((data[i].state == state_name && data[i].start_season == start_month) || (data[i].state == state_name && data[i].start_season < start_month && data[i].end_season >= start_month) || (data[i].state == state_name && data[i].start_season < start_month && data[i].end_season < data[i].start_season)){
+            if((data[i].state == state_name && data[i].start_season == start_month) || (data[i].state == state_name && data[i].start_season < start_month && data[i].end_season >= start_month) || (data[i].state == state_name && data[i].start_season < start_month && data[i].end_season < data[i].start_season) || (data[i].state == state_name && data[i].start_season > data[i].end_season && data[i].end_season >= start_month)){
                 var foodBtn = document.createElement('button');
+                foodBtn.setAttribute("value",data[i].name);
+                foodBtn.setAttribute("class","buttonClass");
                 foodBtn.innerHTML = data[i].name
                 h4.appendChild(foodBtn);
             }
@@ -49,6 +51,12 @@ const newFormHandler = async () => {
 document.getElementById('search').addEventListener('click', function() {
     newFormHandler();
 });
+
+document.getElementById('result').addEventListener('click', event => {
+      if (event.target.className === 'buttonClass') { 
+        console.log(event.target.value);
+      }
+    });
 //   const delButtonHandler = async (event) => {
 //     if (event.target.hasAttribute('data-id')) {
 //       const id = event.target.getAttribute('data-id');
