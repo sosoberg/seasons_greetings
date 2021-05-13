@@ -9,14 +9,13 @@ const PORT = process.env.PORT || 3001;
 
 //chat stuff
 const http = require('http');
+
 const server = http.createServer(app);
-const { Server } = require("socket.io");
-const io = new Server(server);
+const socketIO = require("socket.io");
+//const io = new Server(server);
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
-
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create();
@@ -47,7 +46,7 @@ app.use(routes);
 
 //const bodyParser = require("body-parser");
 
-app.use(express.static("public"));
+
 app.use(session({ secret: "Super secret secret" }));
 //app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
@@ -59,13 +58,20 @@ app.get('/', (req, res) => {
 });
 
 
-io.on('connection', (socket) => {
-  console.log('a user connected');
-  socket.on('chat message', (msg) => {
-      io.emit('chat message', msg);
-    });
-});
 
-sequelize.sync({}).then(() => {
-  app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
-});
+
+(async () =>{
+
+  await sequelize.sync({ force: false })
+    const server = app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
+    const io = socketIO(server);
+
+    io.on('connection', (socket) => {
+      console.log('a user connected');
+      socket.on('chat message', (msg) => {
+          io.emit('chat message', msg);
+        });
+    });
+ 
+})();
+
