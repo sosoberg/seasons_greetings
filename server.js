@@ -58,13 +58,6 @@ app.get('/', (req, res) => {
 });
 
 
-
-<<<<<<< HEAD
-sequelize.sync({}).then(() => {
-  app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
-});
-=======
-
 (async () =>{
 
   await sequelize.sync({ force: false })
@@ -79,4 +72,4 @@ sequelize.sync({}).then(() => {
     });
  
 })();
->>>>>>> 67f45c39667dd9870b388cae331c1a4ae86c5296
+
