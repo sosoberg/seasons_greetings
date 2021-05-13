@@ -1,0 +1,82 @@
+@keyframes changeColor {
+    from {
+        background-color: #FA6900;
+    }
+    to {
+        background-color: #69d2e7;
+    }
+}
+
+.btn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+header {
+    background-image: url(../images/tomatoes.jpg);
+}
+  
+.title {
+    padding: 50px;
+    font-size: 50px;
+    color: white;
+}
+
+nav {
+    font-size: 25px;
+}
+
+.nav {
+    margin: 10px;
+}
+
+.selectgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    align-items: center;
+    margin: 20px;
+}
+
+.states {
+    font-size: 22px;
+}
+
+.month {
+    font-size: 22px;
+}
+
+.search {
+    font-size: 22px;
+}
+
+.productgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.productbtn {
+    width: 250px;
+    padding: 40px 20px 40px 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #FA6900;
+    font-size: 25px;
+}
+
+.productbtn:hover {
+    animation-duration: 1s;
+    animation-name: changeColor;
+
+    background-color: #69d2e7;
+}
+

@@ -1,16 +1,8 @@
-{{!-- {{#each users as |user| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{user.name}}</h2>
-  </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
-  </div>
-</div>
-{{/each}} --}}
+
 
 <div class="row mt-4">
   <div class="col-md-6">
+
     <div class="form-group">
       <select id='select_state' class="states">
         <option>Select a State</option>
@@ -24,24 +16,30 @@
         <option>Select a Month</option>
         <option>Current Month</option>
         <option value="1">Jan</option>
+        <option value="2">Feb</option>
+        <option value="3">Mar</option>
+        <option value="4">Apr</option>
+        <option value="5">May</option>
+        <option value="6">Jun</option>
+        <option value="7">Jul</option>
+        <option value="8">Aug</option>
+        <option value="9">Sep</option>
+        <option value="10">Oct</option>
+        <option value="11">Nov</option>
+        <option value="12">Dec</option>
+
       </select>
       <button>2</button>
     </div>
     <div class="form-group">
       <button type="submit" class="btn btn-primary" id='search'>Search</button>
+
     </div>
 
     <div>
-      <h4 id = 'test'></h4>
+      <div id ='result'></div>
     </div>
-  
-    {{#each products as |product|}}
-      <div class="row mb-2">
-        <div class="col-md-8">
-          <h4>{{product.name}}</h4>
-        </div>
-      </div>
-    {{/each}}
+
 
     {{!-- <h3>Create New Recipe:</h3> --}}
 
@@ -76,10 +74,8 @@
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
       </div>
+
     </div>
-    {{/each}}
-  </div>
-  {{/if}} --}}
 </div>
 
 <script src="./js/profile.js"></script>
