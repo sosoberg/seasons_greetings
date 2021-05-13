@@ -15,3 +15,7 @@ document.getElementById('home').addEventListener('click', function() {
     document.location.replace('/');
 });
 
+document.getElementById('profile').addEventListener('click', function() {
+    document.location.replace('/profile');
+});
+
