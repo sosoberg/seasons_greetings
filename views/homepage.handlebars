@@ -1,4 +1,4 @@
-{{#each users as |user| }}
+{{!-- {{#each users as |user| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
     <h2>{{{get_emoji}}} {{user.name}}</h2>
@@ -7,4 +7,79 @@
     <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
   </div>
 </div>
-{{/each}}
+{{/each}} --}}
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <div class="form-group">
+      <select id='select_state' class="states">
+        <option>Select a State</option>
+        <option>Current State</option>
+        <option value="WA">Washington</option>
+      </select>
+      <button>1</button>
+    </div>
+    <div class="form-group">
+      <select id='select_mon' class="Month">
+        <option>Select a Month</option>
+        <option>Current Month</option>
+        <option value="1">Jan</option>
+      </select>
+      <button>2</button>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" id='search'>Search</button>
+    </div>
+
+    <div>
+      <h4 id = 'test'></h4>
+    </div>
+  
+    {{#each products as |product|}}
+      <div class="row mb-2">
+        <div class="col-md-8">
+          <h4>{{product.name}}</h4>
+        </div>
+      </div>
+    {{/each}}
+
+    {{!-- <h3>Create New Recipe:</h3> --}}
+
+    {{!-- <form class="form new-recipe-form">
+      <div class="form-group">
+        <label for="recipe-name">Recipe name:</label>
+        <input class="form-input" type="text" id="recipe-name" name="recipe-name" />
+      </div>
+      <div class="form-group">
+        <label for="ingredients">Ingredients:</label>
+        <input class="form-input" type="text" id="ingredients" name="ingredients" />
+      </div>
+      <div class="form-group">
+        <label for="recipe-desc">description:</label>
+        <textarea class="form-input" id="recipe-desc" name="recipe-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div> --}}
+
+  {{!-- {{#if products.length}}
+  <div class="col-md-6 project-list">
+    <h3>Current Projects:</h3>
+
+    {{#each projects as |project|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}} --}}
+</div>
+
+<script src="./js/profile.js"></script>

@@ -4,21 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Registry</title>
+  <title>Seasonality</title>
   <link rel="stylesheet" href="/css/jass.css">
 </head>
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
     <h1>
-      User Registry
+      Seasonality
     </h1>
     <!-- Only display the logout button if the user is logged in -->
+
     {{#if logged_in}}
     <nav>
       <button class="btn" id="logout">logout</button>
-    </nav>
+
+    {{else}}
+    <nav>
+      <button class="btn" id="login">login</button>
+
     {{/if}}
+      <button class="btn" id="chat">chat</button>
+      <button class="btn" id="home">home</button>
+    </nav>
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
@@ -31,8 +39,6 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="/socket.io/socket.io.js"></script>
-  <script src= "/js/scriptchat.js"></script>
 </body>
 
 </html>
