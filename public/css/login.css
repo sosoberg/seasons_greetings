@@ -1,0 +1,19 @@
+.logingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0px 0px 30px;
+    font-size: 25px;
+}
+
+.loginHeader {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #a7dbd8;
+}
