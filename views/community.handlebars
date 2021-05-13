@@ -23,8 +23,7 @@
     <form id="form" action="">
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
-<script src="/socket.io/socket.io.js"></script>
-    <script>
+<script src="/socket.io/socket.io.js">
       const socket = io();
       let messages = document.getElementById('messages');
       let form = document.getElementById('form');
@@ -44,7 +43,6 @@
     messages.appendChild(item);
     window.scrollTo(0, document.body.scrollHeight);
   });
-  
-    </script>
+  </script>
 </body>
 </html>
