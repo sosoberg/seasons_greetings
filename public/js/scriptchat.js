@@ -21,7 +21,7 @@ socket.on('chat message', function(msg) {
 var item = document.createElement('li');
 let user = document.querySelector("ul").dataset.userid;
       console.log(user);
-item.textContent = user + " " +msg;
+item.textContent = user + ":" + " " +msg;
 messages.appendChild(item);
 window.scrollTo(0, document.body.scrollHeight);
 });
@@ -47,7 +47,7 @@ function sendMessage() {
 socket.on('newmsg', function(data) {
   if(user) {
      document.getElementById('message-container').innerHTML += '<div><b>' + 
-        data.user + '</b>: ' + data.message + '</div>'
+        data.user + ":" + '</b>: ' + data.message + '</div>'
   }
 }) 
 
