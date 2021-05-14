@@ -58,8 +58,6 @@ app.get('/', (req, res) => {
 });
 
 
-
-
 (async () =>{
 
   await sequelize.sync({ force: false })
