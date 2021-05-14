@@ -1,9 +1,34 @@
 @keyframes changeColor {
     from {
-        background-color: #FA6900;
+        background-color: #69d2e7;
     }
     to {
-        background-color: #69d2e7;
+        background-color: #FA6900;
+    }
+}
+  
+@keyframes changeBackground {
+    from {
+        background-image: url(../images/summer.jpg);
+    }
+    5% {
+        background-image: url(../images/spring.jpg);
+    }
+    33% {
+        background-image: url(../images/spring.jpg);
+    }
+    38% {
+        background-image: url(../images/winter.jpg);
+    }
+    66% {
+        background-image: url(../images/winter.jpg);
+    }
+    71% {
+        background-image: url(../images/fall.jpg); 
+    }
+    to {
+        background-image: url(../images/fall.jpg);
+        opacity: 1;
     }
 }
 
@@ -19,32 +44,63 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    background-color: #239c33;
 }
 
 header {
-    background-image: url(../images/tomatoes.jpg);
+
+    animation-name: changeBackground;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
   
+.titlegrid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
 .title {
-    padding: 50px;
+    padding: 75px 25px 75px 50px;
     font-size: 50px;
     color: white;
 }
 
-nav {
+.slogan {
     font-size: 25px;
 }
 
-.nav {
-    margin: 10px;
+nav {
+    font-size: 25px;
+    background-color: tomato;
+    opacity: .95;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 
+.nav {
+    padding: 20px;
+    border-right: solid 4px;
+    border-left: solid 4px;
+}
+
+.home {
+    margin-left: 4px;
+}
+.nav:hover {
+    color: white;
+}
+
+body {
+    background: url(../images/something.jpg) right top no-repeat, url(../images/somethingflip.jpg) right top repeat;
+}
 .selectgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
 }
 
 .states {
@@ -55,8 +111,9 @@ nav {
     font-size: 22px;
 }
 
-.search {
+#search {
     font-size: 22px;
+    color: black;
 }
 
 .productgrid {
@@ -64,19 +121,20 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.productbtn {
+.buttonClass {
     width: 250px;
     padding: 40px 20px 40px 20px;
     margin: 10px;
     text-align: center;
-    background-color: #FA6900;
+    background-color: #69d2e7;
     font-size: 25px;
+    opacity: .9;
 }
 
-.productbtn:hover {
+.buttonClass:hover {
     animation-duration: 1s;
     animation-name: changeColor;
 
-    background-color: #69d2e7;
+    background-color: #FA6900;
 }
 
