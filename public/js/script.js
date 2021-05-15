@@ -24,19 +24,7 @@ const newFormHandler = async () => {
     const start_month = document.querySelector('#select_mon').value;
     const h4 = document.querySelector('#result');
     h4.innerHTML = '';
-    // console.log(state_name)
-    // console.log(start_month)
-
-    // const response = await fetch(`/api/products`, {
-    //     method: 'GET',
-    // });
-    //   if (response.ok) {
-    //     data = response.json()
-    //     console.log(data)
-    //   } else {
-    //     alert('Nothing Found!');
-    //   }
-
+   
     await fetch(`/api/products`).then(function (response) {
         return response.json();
     }).then(function (data) {
@@ -47,7 +35,7 @@ const newFormHandler = async () => {
                 foodBtn.setAttribute("class","buttonClass");
                 foodBtn.innerHTML = data[i].name
                 h4.appendChild(foodBtn);
-            }
+            } 
         }
     })
   };
