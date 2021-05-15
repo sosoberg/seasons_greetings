@@ -43,6 +43,72 @@
     }
 }
 
+@keyframes seasonChange {
+    from {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .btn {
     background: none;
 	color: inherit;
@@ -64,8 +130,9 @@ body {
   
 .titlegrid {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
     align-items: center;
+    text-align: center;
 }
 
 .title {
@@ -77,6 +144,59 @@ body {
 .slogan {
     font-size: 25px;
     color: whitesmoke;
+}
+
+.seasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr;
+    font-size: 60px;
+}
+
+.spring {
+    top: 95px;
+    position: absolute;
+    opacity: 0;
+    animation-name: seasonChange;
+    animation-delay: 1s;
+    animation-duration: 100s;
+    animation-iteration-count: inherit;
+    color: lawngreen;
+}
+
+.summer {
+    top: 50px;
+    right: 150px;
+    position: absolute;
+    opacity: 0;
+    animation-name: seasonChange;
+    animation-delay: 4s;
+    animation-duration: 100s;
+    animation-iteration-count: inherit;
+    color: lightcoral;
+}
+
+.fall {
+    top: 120px;
+    right: 300px;
+    position: absolute;
+    opacity: 0;
+    animation-name: seasonChange;
+    animation-delay: 7s;
+    animation-duration: 100s;
+    animation-iteration-count:inherit;
+    color: orangered;
+}
+
+.winter {
+    top: 45px;
+    right: 400px;
+    position: absolute;
+    opacity: 0;
+    animation-name: seasonChange;
+    animation-delay: 10s;
+    animation-duration: 100s;
+    animation-iteration-count: inherit;
+    color: lightblue;
 }
 
 nav {
@@ -194,6 +314,21 @@ option {
 @media only screen and (max-width: 1100px) {
     .productgrid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .spring {
+        display: none;
+    }
+    .summer {
+        display: none;
+    }
+    .fall {
+        display: none;
+    }
+    .winter {
+        display: none;
     }
 }
 
