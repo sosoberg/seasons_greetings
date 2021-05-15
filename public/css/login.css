@@ -36,3 +36,45 @@
 .btn-primary {
     background-color: #a7dbd8;
 }
+
+@media only screen and (max-width: 850px) {
+    .logingrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .logingrid {
+        font-size: 25px;
+    }
+
+    .loginHeader {
+        font-size: 30px;
+    }
+
+    .signup-form {
+        margin-top: 5px;
+    }
+
+    .form-input {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .logingrid {
+        font-size: 20px;
+    }
+
+    .loginHeader {
+        font-size: 25px;
+    }
+
+    .signup-form {
+        margin-top: 5px;
+    }
+    
+    .form-input {
+        font-size: 12px;
+    }
+}
