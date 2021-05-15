@@ -6,29 +6,28 @@
         background-color: #FA6900;
     }
 }
-  
-@keyframes changeBackground {
+
+@keyframes changeOpacity {
     from {
-        background-image: url(../images/summer.jpg);
+        background-color: rgba(16, 231, 247, 0.1);
     }
     5% {
-        background-image: url(../images/spring.jpg);
-    }
-    33% {
-        background-image: url(../images/spring.jpg);
-    }
-    38% {
-        background-image: url(../images/winter.jpg);
-    }
-    66% {
-        background-image: url(../images/winter.jpg);
-    }
-    71% {
-        background-image: url(../images/fall.jpg); 
+        background-color: rgba(16, 231, 247, 0.5);
     }
     to {
-        background-image: url(../images/fall.jpg);
-        opacity: 1;
+        background-color: rgba(16, 231, 247, 0.5);
+    }
+}
+
+@keyframes changeOpacity2 {
+    from {
+        background-color: rgba(67, 179, 110, 0);
+    }
+    5% {
+        background-color: rgba(39, 126, 68, 0.5);
+    }
+    to {
+        background-color: rgba(39, 126, 68, 0.5);
     }
 }
 
@@ -42,19 +41,14 @@
 	outline: inherit;
 }
 
+header {
+    background-color: rgba(16, 231, 247, 0.5);
+}
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #239c33;
+    background: url(../images/something.jpg) right top no-repeat, url(../images/somethingflip.jpg) right top repeat;
 }
-
-header {
-
-    animation-name: changeBackground;
-    animation-duration: 200s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
   
 .titlegrid {
     display: grid;
@@ -65,16 +59,17 @@ header {
 .title {
     padding: 75px 25px 75px 50px;
     font-size: 50px;
-    color: white;
+    color: orange;
 }
 
 .slogan {
     font-size: 25px;
+    color: whitesmoke;
 }
 
 nav {
     font-size: 25px;
-    background-color: tomato;
+    background-color: rgba(16, 231, 247, 0.1);
     opacity: .95;
     border-top: 2px solid;
     border-bottom: 2px solid;
@@ -82,38 +77,75 @@ nav {
 
 .nav {
     padding: 20px;
-    border-right: solid 4px;
-    border-left: solid 4px;
+    /* border-right: solid 4px;
+    border-left: solid 4px; */
+    width: 160px;
+    /* background-color: rgba(16, 231, 247, 0.5); */
 }
 
-.home {
-    margin-left: 4px;
-}
 .nav:hover {
-    color: white;
-}
+    animation: changeOpacity;
+    animation-duration: 20s;
+} 
 
-body {
-    background: url(../images/something.jpg) right top no-repeat, url(../images/somethingflip.jpg) right top repeat;
-}
 .selectgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+    margin: 30px;
+    width: 45%;
+    background-color: rgba(212, 247, 16, 0.7);
+    text-align: center;
+}
+
+.selectgrid:hover {
+    background-color: rgba(212, 247, 16, 0.85);
+}
+
+.form-group {
+    align-items: center;
 }
 
 .states {
     font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(212, 247, 16, 0);
+    border: none;
 }
 
 .month {
     font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(212, 247, 16, 0);
+    border: none;
+    align-items: center;
+}
+
+option {
+    background-color: rgba(212, 247, 16, 1);
+}
+
+.selectbtn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    
 }
 
 #search {
     font-size: 22px;
     color: black;
+    padding: 10px;
+}
+
+#search:hover {
+    animation: changeOpacity2;
+    animation-duration: 20s;
 }
 
 .productgrid {
