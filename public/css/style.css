@@ -1,13 +1,3 @@
-@keyframes fadeInRight {
-    0% {
-       opacity: 0;
-       transform: translateX(-250px);
-    }
-    100% {
-       opacity: 0.8;
-       transform: translateY(0);
-    }
- } 
 
 @keyframes changeColor {
     from {
@@ -287,9 +277,7 @@ option {
     background-color: #69d2e7;
     font-size: 25px;
     opacity: .9;
-    
-    /* animation-name: fadeInRight;
-    animation-duration: 2s; */
+
 }
 
 .buttonClass:hover {
@@ -308,6 +296,10 @@ option {
 @media only screen and (max-width: 1440px) {
     .productgrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .fall {
+        right: 600px;
+        top: 150px;
     }
 }
 

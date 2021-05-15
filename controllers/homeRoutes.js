@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Recipe } = require('../models');
 const withAuth = require('../utils/auth');
 const { Product } = require('../models');
 
@@ -41,14 +41,14 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/profile', withAuth, async (req, res) => {
-    const userData = await User.findAll({
+    const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
     });
-    const users = userData.map((project) => project.get({ plain: true }));
+
+    const user = userData.get({ plain: true });
     res.render('profile', {
-      users,
-      logged_in: req.session.logged_in,
+      ...user,
+      logged_in: true
     });
 });
 
