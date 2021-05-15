@@ -1,3 +1,14 @@
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(-250px);
+    }
+    100% {
+       opacity: 0.8;
+       transform: translateY(0);
+    }
+ } 
+
 @keyframes changeColor {
     from {
         background-color: #69d2e7;
@@ -13,6 +24,7 @@
     }
     5% {
         background-color: rgba(16, 231, 247, 0.5);
+        color: grey;
     }
     to {
         background-color: rgba(16, 231, 247, 0.5);
@@ -77,10 +89,7 @@ nav {
 
 .nav {
     padding: 20px;
-    /* border-right: solid 4px;
-    border-left: solid 4px; */
     width: 160px;
-    /* background-color: rgba(16, 231, 247, 0.5); */
 }
 
 .nav:hover {
@@ -95,6 +104,7 @@ nav {
     padding: 15px;
     margin: 30px;
     width: 45%;
+    min-width: 450px;
     background-color: rgba(212, 247, 16, 0.7);
     text-align: center;
 }
@@ -126,17 +136,6 @@ option {
     background-color: rgba(212, 247, 16, 1);
 }
 
-.selectbtn {
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    
-}
-
 #search {
     font-size: 22px;
     color: black;
@@ -154,6 +153,13 @@ option {
 }
 
 .buttonClass {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
     width: 250px;
     padding: 40px 20px 40px 20px;
     margin: 10px;
@@ -161,12 +167,96 @@ option {
     background-color: #69d2e7;
     font-size: 25px;
     opacity: .9;
+    
+    /* animation-name: fadeInRight;
+    animation-duration: 2s; */
 }
 
 .buttonClass:hover {
-    animation-duration: 1s;
     animation-name: changeColor;
+    animation-duration: 1s;
 
     background-color: #FA6900;
 }
 
+@media only screen and (max-width: 1650px) {
+    .productgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .productgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .productgrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .productgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .productgrid {
+        grid-template-columns: 1fr;
+    }
+
+    .buttonClass {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .selectgrid {
+        grid-template-columns: 1fr 1fr;
+        min-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .selectgrid {
+        grid-template-columns: 1fr;
+        min-width: 250px;
+    }
+
+    .form-group {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .selectgrid {
+        min-width: 175px;
+
+    }
+}
