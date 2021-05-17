@@ -7,6 +7,18 @@ const passport = require('passport');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const db = require("./models");
+
+db.sequelize.sync().then(function() {
+
+  console.log('Nice! Database looks fine')
+
+}).catch(function(err) {
+
+  console.log(err, "Something went wrong with the Database Update!")
+
+});
+
 //chat stuff
 const http = require('http');
 
