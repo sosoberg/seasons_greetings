@@ -20,6 +20,7 @@ document.getElementById('profile').addEventListener('click', function () {
 });
 
 const newFormHandler = async () => {
+
     const state_name = document.querySelector('#select_state').value;
     const start_month = document.querySelector('#select_mon').value;
     const h4 = document.querySelector('#result');
@@ -80,7 +81,7 @@ function getMealList(input) {
 
 // get recipe of the meal
 function getMealRecipe(e) {
-    e.preventDefault();
+    // e.preventDefault();
     if (e.target.classList.contains('recipe-btn')) {
         let mealItem = e.target.parentElement.parentElement;
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
