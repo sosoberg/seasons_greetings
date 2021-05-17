@@ -40,7 +40,7 @@ const newFormHandler = async () => {
     })
 };
 
-const searchBtn = document.getElementById('search');
+// const searchBtn = document.getElementById('search');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
@@ -140,6 +140,7 @@ function mealRecipeModal(meal) {
 }
 
 document.getElementById('search').addEventListener('click', function () {
+    document.querySelector(".meal-wrapper").style.display = "block";
     newFormHandler();
 });
 
@@ -221,6 +222,6 @@ document.getElementById('meal').addEventListener('click', event => {
     }
 });
 
-searchBtn.addEventListener('click', function() {
-    document.querySelector(".meal-wrapper").style.display = "block";
-});
+// searchBtn.addEventListener('click', function() {
+//     document.querySelector(".meal-wrapper").style.display = "block";
+// });
