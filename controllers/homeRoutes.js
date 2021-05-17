@@ -38,7 +38,6 @@ router.get('/profile', withAuth, async (req, res) => {
       include: [{ model: Recipe, attributes: ['id', 'name', 'ingredients', 'description', 'pictureurl','user_id'] }],
     });
     let user = userData.get({ plain: true });
-    console.log(user.recipes[0].name)
     res.render('profile', {
       ...user,
       ...user.recipes,
