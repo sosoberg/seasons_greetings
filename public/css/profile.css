@@ -1,0 +1,54 @@
+.userPage {
+    background-color: rgba(rgb(207, 199, 199), green, blue, .95);
+}
+
+.userHeader {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.userpageHeader {
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.profile-meal-wrapper {
+    background-color: white;
+}
+
+.savedRecipe {
+    background-color: rgba(103, 205, 90, 0.65);
+    margin: 30px;
+}
+
+.recipeSubmit {
+    font-size: 30px;
+    margin-left: 55px;
+}
+
+.create {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 55px;
+}
+
+.create:hover {
+    color: white;
+}
+
+.saved-meal-result {
+    text-align: center;
+    align-items: center;
+}
+
+.savedMeal {
+    text-align: center;
+    width: 100%;
+    margin-left: 50px;
+}
