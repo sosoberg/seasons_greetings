@@ -40,7 +40,7 @@ const newFormHandler = async () => {
     })
 };
 
-const searchBtn = document.getElementById('search-btn');
+const searchBtn = document.getElementById('search');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
@@ -63,6 +63,7 @@ function getMealList(input) {
                               <h3>${meal.strMeal}</h3>
                               <a href = "#" class = "recipe-btn">Get Recipe</a>
                           </div>
+                            <button class = "save_user" value = "${meal.strMeal}">Save</button>
                       </div>
                   `;
                 });
@@ -90,7 +91,6 @@ function getMealRecipe(e) {
 
 // create a modal
 function mealRecipeModal(meal) {
-    console.log(meal);
     meal = meal[0];
     let html = `
           <h2 class = "recipe-title">${meal.strMeal}</h2>
@@ -150,33 +150,73 @@ document.getElementById('result').addEventListener('click', event => {
     }
 });
 
-
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
-//   const delButtonHandler = async (event) => {
-//     if (event.target.hasAttribute('data-id')) {
-//       const id = event.target.getAttribute('data-id');
+var ingredientlist = [];
+var obj = {};
+for (let i = 0; i < 20; i++) {
+    ingredientlist[i] = "strIngredient"+(i+1);
+    obj[i] = ingredientlist[i]
+}
 
-//       const response = await fetch(`/api/projects/${id}`, {
-//         method: 'DELETE',
-//       });
+var measurelist = [];
+var obj_measure ={};
+for (let i = 0; i < 15; i++) {
+    measurelist[i] = "strMeasure"+(i+1);
+    obj_measure[i] = measurelist[i]
+}
 
-//       if (response.ok) {
-//         document.location.replace('/profile');
-//       } else {
-//         alert('Failed to delete project');
-//       }
-//     }
-//   };
+async function getfood(pairedFood) {
+    var ing = "";
+    var dis = "";
+    var url = "";
+    var api_name = 'https://www.themealdb.com/api/json/v1/1/search.php?s=' + pairedFood;
+    await fetch(api_name).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        dis = dis + data.meals[0].idMeal
+        url = url + data.meals[0].strMealThumb
+            for (let i = 0; i < 20; i++) {
+                if (data.meals[0][obj[i]] !== null){
+                    ing = ing + data.meals[0][obj_measure[i]] +' ' + data.meals[0][obj[i]] + ' '
+                }
+            }
+        console.log(dis)
+        console.log(url)
+        recipeSave(pairedFood,ing,dis,url)
+    });
+};
 
-//   document
-//     .querySelector('.new-project-form')
-//     .addEventListener('submit', newFormHandler);
+async function recipeSave(name_,ing_,dis_,url_) {
+    const name = name_.trim()
+    const ingredients = ing_.trim()
+    const description = dis_.trim()
+    const pictureurl = url_.trim()
 
-//   document
-//     .querySelector('.project-list')
-//     .addEventListener('click', delButtonHandler);
+    if (name && ingredients && description && pictureurl) {
+      const response =  await fetch(`/api/recipes`, {
+        method: 'POST',
+        body: JSON.stringify({ name, ingredients, description,pictureurl}),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (response.ok) {
+        // document.location.replace('/profile');
+      } else {
+        alert('Failed to save recipe');
+      }
+    }
+}
 
+document.getElementById('meal').addEventListener('click', event => {
+    if (event.target.className === 'save_user') {
+        console.log(event.target.value)
+        const dishname = event.target.value.trim()
+        getfood(dishname)
+        // recipeSave(dishname)
+    }
+});
