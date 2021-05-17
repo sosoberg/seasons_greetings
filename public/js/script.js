@@ -220,3 +220,7 @@ document.getElementById('meal').addEventListener('click', event => {
         // recipeSave(dishname)
     }
 });
+
+searchBtn.addEventListener('click', function() {
+    document.querySelector(".meal-wrapper").style.display = "block";
+});

@@ -1,82 +1,62 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2 class="userHeader">Welcome, {{name}}!</h2>
   </div>
 </div>
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Share your recipe:</h3>
+<div class="savedRecipe">
+  <div>
+    <h3 class="userpageHeader">Share your recipe:</h3>
     <form class="form new-project-form">
-      <div class="form-group">
+      <div class="recipeSubmit">
         <label for="project-name">Recipe name:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
       </div>
-      <div class="form-group">
+      <div class="recipeSubmit">
         <label for="project-funding">Ingredients:</label>
         <input class="form-input" type="text" id="project-funding" name="project-funding" />
       </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
+      <div class="recipeSubmit">
+        <label for="project-desc">Description:</label>
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
       </div>
-      <div class="form-group">
+      <div class="recipeSubmit">
         <label for="project-desc">Picture URL:</label>
         <textarea class="form-input" id="project-url" name="project-desc">https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80</textarea>
       </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+      <div class="recipeSubmit">
+        <button type="submit" class="create">Create!</button>
       </div>
     </form>
   </div>
 </div>
 
-<div class = "container">
-    <div class = "meal-wrapper">
+<div class = "profile-meal-wrapper">
+    <div>
 
-      <div class = "meal-result">
+      <div>
         <h2 class = "title">Your Saved Recipes:</h2>
-       {{#each recipes as |recipe|}}
-        <div id="meal">
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src={{recipe.pictureurl}} alt="food">
-            </div>
-            <div class="meal-name">
-              <h3>{{recipe.name}}</h3>
-              {{#if recipe.description}}
-              <a href="https://www.themealdb.com/meal/{{recipe.description}}" class="recipe-btn">Get Recipe</a>
-              <button class = "delete_recipe" value = {{recipe.id}}>Delete</button>
-              {{else}}
-              <a href="/myrecipe" class="recipe-btn">Get Recipe</a>
-              <button class = "delete_recipe" value = {{recipe.id}}>Delete</button>
-              {{/if }}
-            </div>
-          </div>
-        </div>
-        {{/each}}
-      </div>
-    </div>
-  </div>
-
-  {{!-- <div class = "container">
-    <div class = "meal-wrapper">
-      <div class = "meal-result">
-        <h2 class = "title">Your saved recipe:</h2>
+        <div class="saved-meal-result">
         {{#each recipes as |recipe|}}
-        <div id="meal">
-          <div class="meal-item" data-id="${meal.idMeal}">
-            <div class="meal-img">
-              <img src={{recipe.pictureurl}} alt="food">
-            </div>
-            <div class="meal-name">
-              <h3>{{recipe.name}}</h3>
-              <a href="#" class="recipe-btn">Get Recipe</a>
+          <div class="savedMeal" id="meal">
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src={{recipe.pictureurl}} alt="food">
+              </div>
+              <div class="meal-name">
+                <h3>{{recipe.name}}</h3>
+                {{#if recipe.description}}
+                <a href="https://www.themealdb.com/meal/{{recipe.description}}" class="recipe-btn">Get Recipe</a>
+                <button class = "delete_recipe" value = {{recipe.id}}>Delete</button>
+                {{else}}
+                <a href="/myrecipe" class="recipe-btn">Get Recipe</a>
+                <button class = "delete_recipe" value = {{recipe.id}}>Delete</button>
+                {{/if }}
+              </div>
             </div>
           </div>
-        </div>
         {{/each}}
+        </div>
       </div>
     </div>
-  </div> --}}
-  </div>
+</div>
 <script src="./js/profile.js"></script>
