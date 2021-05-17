@@ -520,5 +520,539 @@
         "start_season": "6",
         "end_season": "10",
         "state": "WA"
+    },
+    {
+        "name": "Apples",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Apricots",
+        "start_season": "5",
+        "end_season": "6",
+        "state": "CA"
+    },
+    {
+        "name": "Artichokes",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Arugula",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Asparagus",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Avocados",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Basil",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Beets",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Belgian Endive",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Blackberries",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Blueberries",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Boysenberries",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "CA"
+    },
+    {
+        "name": "Broccoli",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Broccoli Raab",
+        "start_season": "9",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Brussels Sprouts",
+        "start_season": "11",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Cabbage",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Cantaloupes",
+        "start_season": "7",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Cardoons",
+        "start_season": "12",
+        "end_season": "3",
+        "state": "CA"
+    },
+    {
+        "name": "Carrots",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Cauliflower",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Celeriac",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Celery",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Chard",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Cherries",
+        "start_season": "5",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Chickpeas",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Chicories",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Chiles",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Cilantro",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Clementines",
+        "start_season": "12",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Collard Greens",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Corn",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Cranberry Beans",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Cucumbers",
+        "start_season": "5",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Edamame",
+        "start_season": "9",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Edible Flowers",
+        "start_season": "3",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Eggplant",
+        "start_season": "6",
+        "end_season": "9",
+        "state": "CA"
+    },
+    {
+        "name": "Escarole",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Fava Beans",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Fennel",
+        "start_season": "9",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Fiddleheads",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Figs",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Garlic",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Gooseberries",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "CA"
+    },
+    {
+        "name": "Grapefruit",
+        "start_season": "12",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Grapes",
+        "start_season": "8",
+        "end_season": "9",
+        "state": "CA"
+    },
+    {
+        "name": "Green Almonds",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Green Beans",
+        "start_season": "6",
+        "end_season": "9",
+        "state": "CA"
+    },
+    {
+        "name": "Green Garlic",
+        "start_season": "3",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Green Onions",
+        "start_season": "3",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Horseradish",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Huckleberries",
+        "start_season": "8",
+        "end_season": "9",
+        "state": "CA"
+    },
+    {
+        "name": "Kale",
+        "start_season": "9",
+        "end_season": "2",
+        "state": "CA"
+    },
+    {
+        "name": "Kiwis",
+        "start_season": "12",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Kohlrabi",
+        "start_season": "11",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Kumquats",
+        "start_season": "2",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Leeks",
+        "start_season": "9",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Lemongrass",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "CA"
+    },
+    {
+        "name": "Lemons",
+        "start_season": "12",
+        "end_season": "5",
+        "state": "CA"
+    },
+    {
+        "name": "Lettuce",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "CA"
+    },
+    {
+        "name": "Apples",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "OR"
+    },
+    {
+        "name": "Apricots",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "OR"
+    },
+    {
+        "name": "Artichokes",
+        "start_season": "9",
+        "end_season": "10",
+        "state": "OR"
+    },
+    {
+        "name": "Arugula",
+        "start_season": "5",
+        "end_season": "12",
+        "state": "OR"
+    },
+    {
+        "name": "Asparagus",
+        "start_season": "4",
+        "end_season": "6",
+        "state": "OR"
+    },
+    {
+        "name": "Basil",
+        "start_season": "6",
+        "end_season": "11",
+        "state": "OR"
+    },
+    {
+        "name": "Beets",
+        "start_season": "6",
+        "end_season": "1",
+        "state": "OR"
+    },
+    {
+        "name": "Blackberries",
+        "start_season": "7",
+        "end_season": "9",
+        "state": "OR"
+    },
+    {
+        "name": "Blueberries",
+        "start_season": "6",
+        "end_season": "9",
+        "state": "OR"
+    },
+    {
+        "name": "Boysenberries",
+        "start_season": "6",
+        "end_season": "8",
+        "state": "OR"
+    },
+    {
+        "name": "Broccoli",
+        "start_season": "6",
+        "end_season": "9",
+        "state": "OR"
+    },
+    {
+        "name": "Brussels Sprouts",
+        "start_season": "9",
+        "end_season": "1",
+        "state": "OR"
+    },
+    {
+        "name": "Cabbage",
+        "start_season": "6",
+        "end_season": "2",
+        "state": "OR"
+    },
+    {
+        "name": "Cantaloupes",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "OR"
+    },
+    {
+        "name": "Carrots",
+        "start_season": "6",
+        "end_season": "1",
+        "state": "OR"
+    },
+    {
+        "name": "Cauliflower",
+        "start_season": "7",
+        "end_season": "9",
+        "state": "OR"
+    },
+    {
+        "name": "Celeriac/Celery Root",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "OR"
+    },
+    {
+        "name": "Celery",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "OR"
+    },
+    {
+        "name": "Chard",
+        "start_season": "5",
+        "end_season": "2",
+        "state": "OR"
+    },
+    {
+        "name": "Cherries",
+        "start_season": "6",
+        "end_season": "7",
+        "state": "OR"
+    },
+    {
+        "name": "Chiles",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "OR"
+    },
+    {
+        "name": "Collard Greens",
+        "start_season": "5",
+        "end_season": "2",
+        "state": "OR"
+    },
+    {
+        "name": "Corn",
+        "start_season": "8",
+        "end_season": "10",
+        "state": "OR"
+    },
+    {
+        "name": "Cucumber",
+        "start_season": "7",
+        "end_season": "10",
+        "state": "OR"
+    },
+    {
+        "name": "Edible Flowers",
+        "start_season": "4",
+        "end_season": "9",
+        "state": "OR"
+    },
+    {
+        "name": "Eggplant",
+        "start_season": "8",
+        "end_season": "11",
+        "state": "OR"
+    },
+    {
+        "name": "Fava Beans",
+        "start_season": "4",
+        "end_season": "6",
+        "state": "OR"
+    },
+    {
+        "name": "Fennel",
+        "start_season": "1",
+        "end_season": "12",
+        "state": "OR"
+    },
+    {
+        "name": "Fiddleheads",
+        "start_season": "4",
+        "end_season": "5",
+        "state": "OR"
+    },
+    {
+        "name": "Figs",
+        "start_season": "7",
+        "end_season": "8",
+        "state": "OR"
     }
 ]

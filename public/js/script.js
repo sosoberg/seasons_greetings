@@ -192,7 +192,7 @@ async function getfood(pairedFood) {
 
 async function recipeSave(name_,ing_,dis_,url_) {
     const name = name_.trim()
-    const ingredients = ing_.trim()
+    const ingredients = dis_.trim()
     const description = dis_.trim()
     const pictureurl = url_.trim()
 
