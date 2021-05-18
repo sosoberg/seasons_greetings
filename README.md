@@ -10,7 +10,7 @@
 
 # About this Project
 
-<!-- ![alt text](assets/images/project.jpeg "Screen Shot of webframe for future website") -->
+![alt text](public/images/webpage.jpeg "Screen Shot of webframe from website")
 
 ## Description
 
@@ -37,7 +37,7 @@ This is a full stack app that is hosted on heroku, using MYSQL, Express, Sequeli
 
 # Usage
 
-<!-- Click the link to our webpage: <https://sosoberg.github.io/project_1/> -->
+Click the link to our webpage: <https://quiet-lowlands-76523.herokuapp.com/>
 
 # Contributors
 
